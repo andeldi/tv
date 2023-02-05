@@ -1,0 +1,10 @@
+@import "../partials/colors";
+@import "../partials/fonts";
+
+h1{
+    font-family: $title;
+    background-color: $prim;
+    color: $txtl;
+    top:0;
+    text-align: center;
+}

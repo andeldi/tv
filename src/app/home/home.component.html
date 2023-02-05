@@ -1,0 +1,8 @@
+<div>
+  <img class="banner" src="https://i.blogs.es/a7956b/michael-scott/1366_2000.jpeg" id="front">
+</div>
+<div class="container">
+  <div class="card" *ngFor="let e of lista">
+    <app-card [titulo]="e.titulo" [contenido]="e.contenido" [url]="e.url"></app-card>
+  </div>
+</div>

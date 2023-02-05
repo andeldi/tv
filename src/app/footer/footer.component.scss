@@ -1,0 +1,15 @@
+@import "../partials/colors";
+@import "../partials/fonts";
+
+.footer{
+    background-color: $prim;
+    bottom:0;
+    height:50px;
+    width: device-width;
+    text-align: center;
+    p
+    {
+        color: $sec;
+        font-family: $content;
+    }
+}

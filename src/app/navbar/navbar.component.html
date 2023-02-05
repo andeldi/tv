@@ -1,0 +1,26 @@
+<mat-toolbar id=menu color="primary">
+  <button id="iconoH" mat-icon-button color="secondary" aria-label="Example icon button with a home icon"
+    (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <ul class="list">
+    <li><a routerLink="home">Home</a></li>
+    <li><a routerLink="characters">Characters</a></li>
+    <li><a routerLink="video">Video</a></li>
+  </ul>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer mode="side" open>
+
+    <mat-list role="list" class="slide">
+      <mat-list-item role="listitem"><a class="link" routerLink="home">Home</a></mat-list-item>
+      <mat-list-item role="listitem"><a  class="link" routerLink="characters">Characters</a></mat-list-item>
+      <mat-list-item role="listitem"><a class="link"  routerLink="video">Video</a></mat-list-item>
+    </mat-list>
+
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

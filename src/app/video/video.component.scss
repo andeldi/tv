@@ -1,0 +1,25 @@
+@import "../partials/colors";
+@import "../partials/fonts";
+@import "../partials/queries";
+h1{
+    color: $sec;
+    text-align:center;
+    font-weight:bold;
+    font-family: $title;
+    font-size: 90px;
+    margin-top:40px;
+}
+.container{
+    display:grid;
+    grid-template-columns: auto;
+    gap:50px;
+    justify-content: center;
+}
+@media screen and (max-width: $sm-max-width) {
+    h1{
+        font-size:45px;
+    }
+  iframe{
+    width:400px;
+  }
+ }

@@ -1,0 +1,22 @@
+@import "../partials/colors";
+@import "../partials/fonts";
+@import "../partials/queries";
+
+img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.titulo{
+    font-family: $title;
+    color: $txtd;
+    text-align:center;
+    font-weight:bold;
+}
+.cont{
+    font-family: $content;
+    text-align:center;
+}
+mat-card{
+    margin-bottom: 100px;
+}

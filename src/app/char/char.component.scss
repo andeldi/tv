@@ -1,0 +1,27 @@
+@import "../partials/colors";
+@import "../partials/fonts";
+@import "../partials/queries";
+
+h1{
+    color: $sec;
+    text-align:center;
+    font-weight:bold;
+    font-family: $title;
+    font-size: 90px;
+    margin-top:40px;
+}
+.container{
+    display:grid;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-columns: 400px 400px 400px;
+    gap: 50px;
+    margin-bottom:10%;
+}
+@media screen and (max-width: $sm-max-width) {
+    .container{
+     grid-template-columns: 200px;
+     grid-template-rows: 200px;
+     margin-top:10%;
+     justify-content: center;
+    }
+ }
